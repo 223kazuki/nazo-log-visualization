@@ -1,0 +1,12 @@
+in:
+  type: file
+  path_prefix: "%%%input%%%"
+  parser:
+    trim_if_not_quoted: true
+out:
+  type: file
+  path_prefix: %%%output%%%
+  file_ext: json
+  formatter:
+    type: jsonl
+    encoding: UTF-8
