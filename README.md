@@ -16,10 +16,11 @@ curl http://localhost:9200
 ## Run
 
 ```
+# modify template.json date_template.match to date_data prefix.
 # regist elasticsearch template.
 sh 00.init.sh
 
-# create embulk config from date.
+# create embulk config from data.
 sh 01.make_embulk_config.sh test.csv
 # edit test.yml if require.
 
